@@ -13,9 +13,13 @@ function Skills() {
         <div className="charskills">
             <ul>
                 {data.map((skill) => (
-                    <li key={skill[1].name}>
+                    <li key={skill.name}>
                         <h3>{skill.name}</h3>
-                        
+                        <div>
+                            <div>
+                                
+                            </div>
+                        </div>
                     </li>
                 ))} 
             </ul>
