@@ -1,12 +1,12 @@
 html,
 body,
-wrapper,
-profileinfo{
+.wrapper,
+.profileinfo{
     height:100%;
     background: #e0e0e0;
 }
 
-wrapper {
+.wrapper {
     /*margin-bottom: 4%;*/
     
 }
@@ -24,7 +24,7 @@ body{
     /*justify-content:center;*/
 }
 
-wrapper {
+.wrapper {
     display: flex;
     flex-flow: row wrap;
     height: 85%;
@@ -35,31 +35,31 @@ wrapper {
     flex: 1 100%;
 }*/
 
-wrapper profileinfo,
-wrapper profileinfo charinfo {
+.wrapper .profileinfo,
+.wrapper .profileinfo .charinfo {
     border: 1px solid #dee2e6;
 }
 
-wrapper{
+.wrapper{
     flex:1 auto;
     padding:1.5rem 1.5rem;
 }
 
-charinfo {
+.charinfo {
     display: flex;
     flex-flow: row wrap;
 }
 
-charinfo p{
+.charinfo p{
     margin:0;
 }
 
-charprogress {
+.charprogress {
     display: flex;
     flex-flow: row wrap;
 }
 
-profileinfo {
+.profileinfo {
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -72,7 +72,7 @@ profileinfo {
     -webkit-box-shadow: 5px 5px 10px #5a5a5a, -5px -5px 10px #ffffff;
 }
 
-contactcard {
+.contactcard {
     flex: 1;
     padding: 0 1em;
     display: flex;
@@ -85,55 +85,55 @@ contactcard {
     margin-left: 1.5em;
 }
 
-level{
+.level{
     flex: 1 auto;
     align-self:center;
     padding: 0 .5em 0 .5em;
 
 }
 
-level p {
+.level p {
     text-align:center;
 }
 
-charprogress {
+.charprogress {
     flex: 4 auto;
     border-left: 1px solid #dee2e6;
     padding-left:1em;
 }
 
-charprogress > :nth-child(1) {
+.charprogress > :nth-child(1) {
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-end;
 }
 
-charprogress char-slot p{
+.charprogress char-slot p{
     margin:0;
 }
 
-charprogress > :nth-child(2) {
+.charprogress > :nth-child(2) {
     margin: 0 2em 0 2em;
     flex:1;
 }
 
-charstats{
+.charstats{
     display: flex;
     flex-flow: row nowrap;
     overflow:auto;
     height:100%;
 }
 
-charskills{
+.charskills{
     width:15rem;
     display:flex;
 }
 
-box{
+.box{
     display:flex
 }
 
-charskills ul {
+.charskills ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -145,12 +145,12 @@ charskills ul {
     padding: 0;
 }
 
-charskills ul li {
+.charskills ul li {
     display: flex;
     overflow-x: hidden;
     flex-flow: column nowrap;
     width: 100%;
-    padding: .75rem 1.25rem;
+    /* padding: .75rem 1.25rem; */
     border: 1px solid #dee2e6;
 }
 
@@ -158,7 +158,7 @@ li p{
     margin:0;
     padding:0;
 }
-charimg{
+.charimg{
     /*max-width:32em;*/
     max-height:100%;
     display:flex;
@@ -167,7 +167,7 @@ charimg{
     flex:1 auto;
 }
 
-charimg img-frame{
+.charimg img-frame{
     max-width: 100%;
     max-height: 95%;
     display:flex;
@@ -181,7 +181,7 @@ img-frame img{
     /*max-height:25em;*/
 }
 
-charhealth{
+.charhealth{
     display:flex;
     flex-flow:row nowrap;
 }
@@ -194,37 +194,37 @@ a[githubbutton] {
     color:#fff;
 }
 
-charhealth{
+.charhealth{
     display:flex;
     justify-content:space-evenly;
 }
 
-charhealth charhealthbox,
-charhealth charmpbox {
+.charhealth .charhealthbox,
+.charhealth .charmpbox {
     display: flex;
     flex-flow: row nowrap;
     flex:1 auto;
     justify-content:center;
 }
 
-charhealth charhealthbox hptext,
-charhealth charmpbox mptext{
+.charhealth .charhealthbox .hptext,
+.charhealth .charmpbox .mptext{
     align-self: center;
 }
 
-charhealth charhealthbox hpbox,
-charhealth charmpbox mpbox {
+.charhealth .charhealthbox .hpbox,
+.charhealth .charmpbox .mpbox {
     display: flex;
     flex-flow: column nowrap;
     width:100%;
 }
 
-hpbox hp,
-mpbox mp{
+.hpbox .hp,
+.mpbox .mp{
     align-self:center;
 }
 
-experiance {
+.experiance {
     display: flex;
     height: 1rem;
     overflow: hidden;
@@ -235,7 +235,7 @@ experiance {
     width:100%;
 }
 
-experiance experiance-bar {
+.experiance experiance-bar {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -246,70 +246,70 @@ experiance experiance-bar {
     transition: width .6s ease;
 }
 
-experiance[thin] {
+.experiance[thin] {
     max-height:2px;
 }
 
-experiance-bar[full]{
+.experiance-bar[full]{
     width:100%;
 }
 
-experiance-bar[green] {
+.experiance-bar[green] {
     background-color: #28a745;
 }
 
-experiance-bar[blue] {
+.experiance-bar[blue] {
     background-color: #007bff;
 }
 
-experiance-bar[orange] {
+.experiance-bar[orange] {
     background-color: #FF6600;
 }
 
-box1 {
+.box1 {
     height: 93%;
     display: flex;
     justify-content: center;
     /*align-items:center;*/
 }
 
-box2{
+.box2{
     display:flex;
     flex-flow:column;
 }
 
-contactCard cardbox {
+.contactCard .cardbox {
     display: flex;
     flex-flow: column nowrap;
     border: 1px solid #dee2e6;
 }
 
-cardimgbox {
+.cardimgbox {
     margin-bottom:.5rem;
     /*width: 15em;*/
     /*align-self:center;*/
 }
 
-cardimgbox img {
+.cardimgbox img {
     width: 100%;
     border-radius: 1rem;
     /*height: 100%;*/
 }
 
-cc {
+.cc {
     display: flex;
     flex-flow: column nowrap;
     /*border: 1px solid black;*/
     border-radius: 5px 5px 0 0;
 }
 
-dbox {
+.dbox {
     background-color: #ffef9c;
     height: 1em;
     border-radius: 5px 5px 0 0;
 }
 
-ibox {
+.ibox {
     display: flex;
     flex-flow: row nowrap;
     background-color: #132232;
@@ -317,7 +317,7 @@ ibox {
     /*padding:1em;*/
 }
 
-cbox {
+.cbox {
     display: flex;
     flex: 1 auto;
     justify-content:center;
@@ -325,7 +325,7 @@ cbox {
     /*padding:1em;*/
 }
 
-nbox {
+.nbox {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -335,15 +335,15 @@ nbox {
     min-width:15em;
 }
 
-nbtitle {
+.nbtitle {
     font-size: 1rem;
 }
 
-nbname {
+.nbname {
     font-size: 1.8rem;
 }
 
-cbox ul{
+.cbox ul{
     /*padding-left:5px;*/
     padding: 0 5px 0 5px;
     margin:.3rem;
@@ -357,22 +357,37 @@ ul li {
 a {
     color: #ffef9c;
 }
-cicon {
+.cicon {
     padding: 0 5px 0 5px;
     font-size: 1.5rem
 }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    wrapper{
+    .wrapper{
         flex:1;
         margin:0 1em 0 1em;
     }
 
-    contactcard{
+    .contactcard{
         padding:0px;
     }
 }
 
+li p{
+  margin-bottom: .25rem;
+}
+.progress, .progress-stacked {
+    border-radius: 0 important;
+}
+.progress{
+  border-radius: 0;
+  margin:0 1rem 0 1rem;
+}
+.progress-bar{
+  font-size: 1rem;
+  border-radius: 0;
+  /* padding: .5rem 0 .5rem 0; /* vertical */
+}
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
     
